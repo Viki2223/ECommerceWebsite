@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background: #f5f0f0;
+  color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 10px !important;
+  height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #ff5252;
+}
+
+::-webkit-scrollbar-track{
+  background: #fff;
+
+}
+
+
+
+.container {
+  width: 95%;
+  margin: auto;
+  overflow: visible;
+}
+
+.link:hover {
+  color: #ff5252;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
+
+nav ul button {
+  text-transform: capitalize !important;
+}
+
+nav ul button:hover {
+  background: none !important;
+}
+
+.sliderHome,
+.homeCatSlider {
+  overflow: visible !important;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #fff !important;
+  border-radius: 100% !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ff5252 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px !important;
+  color: #000 !important;
+  transition: color 0.3s ease;
+}
+
+.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next{
+   width:30px !important;
+   height: 30px !important;
+   min-width: 30px !important;
+   top:55% !important;     
+}
+
+.smlBtn .swiper-button-prev:after,.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+  color: #000 !important;
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: #000 !important;
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+}
+
+.homeCatSlider .swiper-button-prev:after,
+.homeCatSlider .swiper-button-next:after {
+  font-size: 16px !important;
+}
+
+.homeCatSlider .swiper-button-prev {
+  left: -10px !important;
+}
+
+.homeCatSlider .swiper-button-next {
+  right: -10px !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+  color: #ff5252 !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.homeCatSlider .item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.homeCatSlider .item:hover img {
+  transform: scale(1.1);
+}
+
+.MuiTabs-indicator{
+  background-color: #ff5252 !important ;
+}
+
+.MuiTab-textColorPrimary.Mui-selected{
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper{
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
